@@ -298,7 +298,7 @@
         message.className = 'encadre encadre--urgence';
         message.innerHTML = '<p><strong>L\'envoi n\'a pas fonctionné.</strong></p>' +
           '<p>Appelez-moi au <a href="tel:+33781067379">07 81 06 73 79</a> ' +
-          'ou écrivez à <a href="mailto:contact@nogrette-elec.fr">contact@nogrette-elec.fr</a>.</p>';
+          'ou écrivez à <a href="mailto:nogrette.elec@gmail.com">nogrette.elec@gmail.com</a>.</p>';
         message.style.display = 'block';
       }
     });
