@@ -1107,7 +1107,12 @@ a.carte--urgence:hover { border-color: rgba(255, 90, 71, .75); }
 
   .nav {
     position: fixed;
-    top: 78px; left: 0; right: 0; bottom: 0;
+    top: 78px; left: 0; right: 0;
+    /* hauteur explicite plutôt que bottom:0 : certains navigateurs intégrés
+       (appli Facebook, Instagram...) calculent mal un fixed ancré en bas
+       quand leur barre d'adresse se rétracte, ce qui coupait le menu. */
+    height: calc(100vh - 78px);
+    height: calc(100dvh - 78px);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -1123,12 +1128,11 @@ a.carte--urgence:hover { border-color: rgba(255, 90, 71, .75); }
 
   .nav__item { width: 100%; }
   .nav__item > a::after { content: ''; }
-  .sous-menu {
-    position: static; opacity: 1; visibility: visible; transform: none;
-    box-shadow: none; border: 0; border-radius: 0; background: transparent;
-    padding: 0 0 0 18px; min-width: 0;
-  }
-  .sous-menu a { font-size: .94rem; padding: 13px 12px; color: var(--texte-doux); }
+  /* Sur mobile, « Prestations » est un lien direct vers la page qui liste
+     toutes les prestations : pas besoin d'y dérouler le sous-menu, ça
+     allonge le menu pour rien. Les liens restent dans la page (SEO,
+     survol sur ordinateur), juste masqués ici. */
+  .sous-menu { display: none; }
 
   .entete__tel span { display: none; }
   .entete__tel { padding: 12px 14px; }
