@@ -83,6 +83,11 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* Verrou anti-défilement horizontal : quoi qu'il arrive, la page ne peut
+     jamais être plus large que l'écran. « clip » (moderne) ne casse pas
+     l'en-tête collant ; « hidden » sert de repli pour les vieux navigateurs. */
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -2308,6 +2313,13 @@ body.intro-active .hero--page .conteneur > * { animation-play-state: paused; }
   .btn__groupe { flex-direction: column; }
   .entete__inner { min-height: 66px; }
   .nav { inset: 66px 0 0 0; }
+
+  /* En-tête compact : impossible à faire déborder, même avec une grande
+     taille de police réglée sur le téléphone */
+  .logo svg { height: 36px; }
+  .logo { gap: 9px; overflow: hidden; }
+  .logo__texte { font-size: .98rem; white-space: nowrap; }
+  .logo__sous { display: none; }
 
   .barre-appel { display: flex; }
   .pied { padding-bottom: 110px; }
