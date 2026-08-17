@@ -823,8 +823,10 @@
   /* --- 2 quinquies. Titre composé lettre par lettre -------------------------- */
   /* Le grand titre s'assemble sous les yeux du visiteur : chaque lettre
      arrive avec son propre délai. Le texte original reste disponible pour
-     les moteurs de recherche et lecteurs d'écran via aria-label. */
-  if (!sobre) {
+     les moteurs de recherche et lecteurs d'écran via aria-label.
+     Pas sur mobile : les mots insécables risquent de déborder des petits
+     écrans, et l'entrée de bloc classique y suffit largement. */
+  if (!sobre && window.innerWidth >= 700) {
     var h1 = document.querySelector('.hero h1');
     if (h1) {
       var compteLettres = 0;
