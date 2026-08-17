@@ -20,8 +20,61 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- jsonld-auto:debut -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Accueil",
+   "item": "https://nogrette-elec.fr/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Contact"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Le devis est-il vraiment gratuit ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, entièrement : le déplacement pour venir voir le chantier et l'établissement du devis ne vous coûtent rien, sur toute ma zone d'intervention. Et il est sans engagement — si le chiffrage ne vous convient pas, ça s'arrête là, sans discussion."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Vous déplacez-vous juste pour « venir voir » ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, et c'est même la bonne façon de faire : annoncer un prix au téléphone sans avoir vu le tableau ni l'état des circuits, c'est se tromper à coup sûr — dans un sens ou dans l'autre. Une visite de vingt minutes donne un devis juste."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Sous quel délai pouvez-vous intervenir ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Pour un dépannage, j'essaie de passer le jour même ou le lendemain en semaine. Pour des travaux, tout dépend de mon carnet de chantiers : je vous annonce une date dès le devis accepté, et je la tiens. Le plus simple reste de m'appeler pour en parler."
+   }
+  }
+ ]
+}
+</script>
+<!-- jsonld-auto:fin -->
 </head>
 <body>
 
@@ -73,6 +126,7 @@
 <main id="contenu">
 
 <section class="hero hero--page">
+  <div class="hero__fond"><img src="assets/img/photos/v2/sejour-poutres-suspension.webp" alt="" fetchpriority="high" decoding="async"></div>
   <div class="conteneur">
     <nav class="ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>›</span>Contact</nav>
     <h1>Demander un devis</h1>
@@ -220,9 +274,33 @@
             </div>
             <div>
               <strong>Horaires</strong>
-              <span>Lundi au vendredi, 8 h – 18 h<br><em>À ajuster selon vos horaires réels</em></span>
+              <span>Lundi au vendredi, 8 h 30 – 18 h</span>
             </div>
           </div>
+
+          <div class="coord__item">
+            <div class="coord__icone">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-3-.4-4.2-1.1L3 20l1.1-5.3A8.5 8.5 0 1 1 21 11.5Z"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Une photo vaut mille mots</strong>
+              <span>Envoyez une photo de votre tableau ou de la panne par
+                <a href="sms:+33781067379">SMS</a> ou
+                <a href="https://wa.me/33781067379" rel="noopener" target="_blank">WhatsApp</a>
+                — ça m'aide à préparer l'intervention.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="encadre" style="margin-top:30px">
+          <p><strong>Ce qui se passe après votre message :</strong></p>
+          <p style="margin:0">
+            1. Je vous rappelle <strong>dans la journée</strong> (jours ouvrés).<br>
+            2. Si le chantier le demande, je passe voir sur place — gratuitement.<br>
+            3. Vous recevez le <strong>devis en PDF sous 48 h</strong>, détaillé poste par poste.
+          </p>
         </div>
 
         <div class="encadre" style="margin-top:30px">
@@ -234,6 +312,26 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section class="section section--gris">
+  <div class="conteneur">
+    <h2 class="section__titre">Avant de m'écrire, trois réponses rapides</h2>
+    <div class="faq" style="margin-top:32px">
+      <details>
+        <summary>Le devis est-il vraiment gratuit ?</summary>
+        <div class="faq__reponse"><p>Oui, entièrement : le déplacement pour venir voir le chantier et l'établissement du devis ne vous coûtent rien, sur toute ma zone d'intervention. Et il est sans engagement — si le chiffrage ne vous convient pas, ça s'arrête là, sans discussion.</p></div>
+      </details>
+      <details>
+        <summary>Vous déplacez-vous juste pour « venir voir » ?</summary>
+        <div class="faq__reponse"><p>Oui, et c'est même la bonne façon de faire : annoncer un prix au téléphone sans avoir vu le tableau ni l'état des circuits, c'est se tromper à coup sûr — dans un sens ou dans l'autre. Une visite de vingt minutes donne un devis juste.</p></div>
+      </details>
+      <details>
+        <summary>Sous quel délai pouvez-vous intervenir ?</summary>
+        <div class="faq__reponse"><p>Pour un dépannage, j'essaie de passer le jour même ou le lendemain en semaine. Pour des travaux, tout dépend de mon carnet de chantiers : je vous annonce une date dès le devis accepté, et je la tiens. Le plus simple reste de m'appeler pour en parler.</p></div>
+      </details>
     </div>
   </div>
 </section>
@@ -290,7 +388,7 @@
           <li>Nyons, 26110</li>
           <li>Drôme · Vaucluse · Ardèche</li>
           <li><a href="mailto:nogrette.elec@gmail.com">nogrette.elec@gmail.com</a></li>
-          <li>Lundi au vendredi, 8 h – 18 h</li>
+          <li>Lundi au vendredi, 8 h 30 – 18 h</li>
         </ul>
       </div>
 

@@ -19,12 +19,12 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://nogrette-elec.fr/assets/img/og-image.jpg">
-<meta name="theme-color" content="#020C0E">
+<meta name="theme-color" content="#030614">
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 
 <!-- Données structurées : permet à Google d'afficher horaires, zone et avis
@@ -178,9 +178,17 @@
 
 <!-- ====================== BANDEAU D'ACCROCHE ====================== -->
 <section class="hero">
-  <div class="hero__fond">
-    <img src="assets/img/photos/armoire-electrique-triphasee-nyons.webp"
+  <div class="hero__fond hero__fond--diapo">
+    <img src="assets/img/photos/v2/salle-reception-pierre-table-bois.webp"
          alt="" fetchpriority="high" decoding="async">
+    <img src="assets/img/photos/v2/cablage-tableau-electrique-en-cours.webp"
+         alt="" loading="lazy" decoding="async">
+    <img src="assets/img/photos/v2/salle-bain-baignoire-ilot-pierre.webp"
+         alt="" loading="lazy" decoding="async">
+    <img src="assets/img/photos/v2/cave-a-vin-casiers-bois.webp"
+         alt="" loading="lazy" decoding="async">
+    <img src="assets/img/photos/v2/suite-parentale-baies-vitrees.webp"
+         alt="" loading="lazy" decoding="async">
   </div>
   <div class="conteneur">
     <div class="hero__contenu">
@@ -302,7 +310,7 @@
           </svg>
         </div>
         <h3>Dépannage &amp; recherche de panne</h3>
-        <p>Plus de courant, disjoncteur qui saute, prise qui chauffe ? Ne cherchez pas vous-même, appelez-moi.</p>
+        <p>Plus de courant, disjoncteur qui saute, prise qui chauffe ? Ne cherchez pas vous-même, appelez-moi. Réponse en journée, du lundi au vendredi.</p>
         <span class="carte__lien">En savoir plus →</span>
       </a>
 
@@ -353,6 +361,25 @@
       </a>
 
     </div>
+
+    <!-- Trois publics : chacun sa porte d'entrée -->
+    <div class="grille grille--3" style="margin-top:44px">
+      <a href="prestations/index.html" class="carte">
+        <h3>🏡 Particuliers</h3>
+        <p>Maison, appartement, gîte : installation, rénovation, dépannage, climatisation. Un seul artisan du devis à la fin du chantier.</p>
+        <span class="carte__lien">Voir les prestations →</span>
+      </a>
+      <a href="habitat-collectif.html" class="carte">
+        <h3>🏢 Syndics &amp; bailleurs</h3>
+        <p>Parties communes, mise en conformité, éclairage LED des communs. Devis exploitable en assemblée générale, coupures annoncées aux résidents.</p>
+        <span class="carte__lien">Habitat collectif →</span>
+      </a>
+      <a href="prestations/electricite-industrielle.html" class="carte">
+        <h3>🏭 Professionnels &amp; agricole</h3>
+        <p>Caves, moulins, ateliers, exploitations : armoires, automatismes, moteurs. Intervention calée sur vos contraintes de production.</p>
+        <span class="carte__lien">Électricité industrielle →</span>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -373,9 +400,55 @@
         <span class="compteur__label">villes dans ma zone</span>
       </div>
       <div class="compteur">
-        <span class="compteur__nombre" data-compteur="48">0</span>
-        <span class="compteur__label">heures pour votre devis</span>
+        <span class="compteur__nombre" data-compteur="123">0</span>
+        <span class="compteur__label">communes desservies</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== RIVIÈRE DE PHOTOS ====================== -->
+<!-- Bandeau défilant en continu : un aperçu vivant des chantiers.
+     Survolez pour mettre en pause, cliquez pour agrandir. -->
+<section class="defile" aria-label="Aperçu de chantiers récents">
+  <div class="defile__piste">
+    <div class="defile__groupe">
+      <button type="button" data-photo="assets/img/photos/v2/sejour-poutres-suspension.webp" data-legende="Séjour rénové : poutres apparentes et suspension" aria-label="Agrandir : séjour rénové poutres apparentes">
+        <img src="assets/img/photos/v2/sejour-poutres-suspension-min.webp" alt="Séjour rénové avec poutres apparentes et suspension noire" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/tableau-electrique-fini-propre.webp" data-legende="Tableau électrique terminé, câblage repéré" aria-label="Agrandir : tableau électrique terminé">
+        <img src="assets/img/photos/v2/tableau-electrique-fini-propre-min.webp" alt="Tableau électrique terminé au câblage propre" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/mur-pierre-eclairage-spots.webp" data-legende="Mur en pierre mis en valeur par l'éclairage" aria-label="Agrandir : mur en pierre éclairé">
+        <img src="assets/img/photos/v2/mur-pierre-eclairage-spots-min.webp" alt="Mur en pierre apparente mis en valeur par des spots" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/plafond-gaines-electriques-brut.webp" data-legende="Passage des gaines électriques en plafond, maison neuve" aria-label="Agrandir : gaines électriques en plafond">
+        <img src="assets/img/photos/v2/plafond-gaines-electriques-brut-min.webp" alt="Gaines électriques posées en plafond sur chantier neuf" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/baignoire-fenetre-campagne.webp" data-legende="Salle de bain avec baignoire îlot face à la campagne" aria-label="Agrandir : baignoire îlot">
+        <img src="assets/img/photos/v2/baignoire-fenetre-campagne-min.webp" alt="Baignoire îlot devant une fenêtre sur la campagne" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/tableau-en-cours-cablage-chantier.webp" data-legende="Câblage d'un tableau en cours de chantier" aria-label="Agrandir : câblage de tableau en cours">
+        <img src="assets/img/photos/v2/tableau-en-cours-cablage-chantier-min.webp" alt="Tableau électrique en cours de câblage" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/chambre-mur-bleu-spots.webp" data-legende="Chambre au mur bleu, éclairage sur rail" aria-label="Agrandir : chambre mur bleu">
+        <img src="assets/img/photos/v2/chambre-mur-bleu-spots-min.webp" alt="Chambre avec mur bleu et éclairage sur rail" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/salle-reception-mange-debout.webp" data-legende="Salle de réception : pierre, spots encastrés et corniches lumineuses" aria-label="Agrandir : salle de réception">
+        <img src="assets/img/photos/v2/salle-reception-mange-debout-min.webp" alt="Salle de réception en pierre avec éclairage encastré" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/tableau-borniers-en-cours.webp" data-legende="Rénovation d'un tableau : borniers et repérage en cours" aria-label="Agrandir : tableau en rénovation">
+        <img src="assets/img/photos/v2/tableau-borniers-en-cours-min.webp" alt="Tableau électrique en rénovation, borniers en cours" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/salle-eau-papier-peint-floral.webp" data-legende="Salle d'eau : papier peint floral et douche vitrée" aria-label="Agrandir : salle d'eau papier peint floral">
+        <img src="assets/img/photos/v2/salle-eau-papier-peint-floral-min.webp" alt="Salle d'eau avec papier peint floral et douche vitrée" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/sejour-cuisine-renove-village.webp" data-legende="Séjour et cuisine rénovés dans une maison de village" aria-label="Agrandir : séjour cuisine rénovés">
+        <img src="assets/img/photos/v2/sejour-cuisine-renove-village-min.webp" alt="Séjour et cuisine rénovés dans une maison de village" loading="lazy" decoding="async">
+      </button>
+      <button type="button" data-photo="assets/img/photos/v2/groupe-exterieur-clim-jardin.webp" data-legende="Groupe extérieur de climatisation posé au jardin" aria-label="Agrandir : groupe extérieur de climatisation">
+        <img src="assets/img/photos/v2/groupe-exterieur-clim-jardin-min.webp" alt="Groupe extérieur de climatisation installé au jardin" loading="lazy" decoding="async">
+      </button>
     </div>
   </div>
 </section>
@@ -410,8 +483,8 @@
       <div>
         <div class="chantier">
           <div class="chantier__img">
-            <img src="assets/img/photos/electricien-au-travail-nyons-min.webp"
-                 alt="Électricien au travail sur un chantier de rénovation à Nyons"
+            <img src="assets/img/photos/v2/remi-nogrette-au-travail.webp"
+                 alt="Rémi Nogrette au travail sur un chantier de rénovation"
                  loading="lazy" decoding="async">
           </div>
           <div class="chantier__corps">
@@ -436,29 +509,29 @@
     </p>
 
     <div class="galerie">
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/armoire-electrique-triphasee-nyons.webp" data-legende="Armoire électrique triphasée en cours de câblage, repérage par couleurs" aria-label="Agrandir : armoire électrique triphasée">
-        <img src="assets/img/photos/armoire-electrique-triphasee-nyons-min.webp" alt="Armoire électrique triphasée en cours de câblage" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/baignoire-vue-jardin.webp" data-legende="Salle de bain : baignoire îlot, mur en pierre et éclairage sur mesure" aria-label="Agrandir : salle de bain baignoire îlot">
+        <img src="assets/img/photos/v2/baignoire-vue-jardin-min.webp" alt="Salle de bain avec baignoire îlot et mur en pierre" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/tableau-electrique-cablage-propre.webp" data-legende="Tableau électrique ouvert : câblage aligné et repéré" aria-label="Agrandir : tableau électrique câblage propre">
-        <img src="assets/img/photos/tableau-electrique-cablage-propre-min.webp" alt="Tableau électrique ouvert, câblage aligné et repéré" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/fils-electriques-eventail-tableau.webp" data-legende="Câblage d'un tableau : chaque fil repéré avant raccordement" aria-label="Agrandir : câblage de tableau électrique">
+        <img src="assets/img/photos/v2/fils-electriques-eventail-tableau-min.webp" alt="Fils électriques repérés en éventail avant raccordement au tableau" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/cave-a-vin-eclairage-nyons.webp" data-legende="Cave à vin aménagée avec éclairage de mise en valeur" aria-label="Agrandir : cave à vin avec éclairage">
-        <img src="assets/img/photos/cave-a-vin-eclairage-nyons-min.webp" alt="Cave à vin aménagée avec éclairage de mise en valeur" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/cave-a-vin-tonneau.webp" data-legende="Cave à vin aménagée : casiers bois, pierre et éclairage de mise en valeur" aria-label="Agrandir : cave à vin aménagée">
+        <img src="assets/img/photos/v2/cave-a-vin-tonneau-min.webp" alt="Cave à vin aménagée avec casiers en bois et tonneau" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/salle-reception-eclairage-nyons.webp" data-legende="Grande salle de réception avec éclairage encastré et pierre apparente" aria-label="Agrandir : salle de réception">
-        <img src="assets/img/photos/salle-reception-eclairage-nyons-min.webp" alt="Grande salle de réception avec éclairage encastré" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/salle-reception-mange-debout.webp" data-legende="Grande salle de réception : pierre apparente et éclairage encastré" aria-label="Agrandir : salle de réception">
+        <img src="assets/img/photos/v2/salle-reception-mange-debout-min.webp" alt="Grande salle de réception avec pierre apparente et éclairage encastré" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/gaines-electriques-parpaings.webp" data-legende="Gaines électriques posées dans les murs en parpaings avant enduit" aria-label="Agrandir : gaines électriques">
-        <img src="assets/img/photos/gaines-electriques-parpaings-min.webp" alt="Gaines électriques posées dans les murs en parpaings" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/cuisine-equipee-four-induction.webp" data-legende="Cuisine rénovée : circuits dédiés four et plaque à induction" aria-label="Agrandir : cuisine équipée">
+        <img src="assets/img/photos/v2/cuisine-equipee-four-induction-min.webp" alt="Cuisine équipée avec four et plaque à induction raccordés" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/tableau-triphase-industriel-drome.webp" data-legende="Tableau triphasé de type industriel, câblage de puissance et de commande" aria-label="Agrandir : tableau triphasé industriel">
-        <img src="assets/img/photos/tableau-triphase-industriel-drome-min.webp" alt="Tableau triphasé de type industriel" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/armoire-electrique-industrielle.webp" data-legende="Armoire électrique de type industriel : puissance et commande" aria-label="Agrandir : armoire électrique industrielle">
+        <img src="assets/img/photos/v2/armoire-electrique-industrielle-min.webp" alt="Armoire électrique de type industriel" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/climatisation-split-mural-nyons.webp" data-legende="Unité intérieure de climatisation murale posée dans une pièce de vie" aria-label="Agrandir : climatisation murale">
-        <img src="assets/img/photos/climatisation-split-mural-nyons-min.webp" alt="Unité intérieure de climatisation murale" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/climatisation-murale-interieure.webp" data-legende="Unité intérieure de climatisation murale posée dans une pièce de vie" aria-label="Agrandir : climatisation murale">
+        <img src="assets/img/photos/v2/climatisation-murale-interieure-min.webp" alt="Unité intérieure de climatisation murale" loading="lazy" decoding="async">
       </button>
-      <button type="button" class="galerie__item" data-photo="assets/img/photos/sejour-eclairage-suspension.webp" data-legende="Séjour rénové avec suspensions et éclairage encastré" aria-label="Agrandir : séjour avec suspensions">
-        <img src="assets/img/photos/sejour-eclairage-suspension-min.webp" alt="Séjour rénové avec suspensions et éclairage encastré" loading="lazy" decoding="async">
+      <button type="button" class="galerie__item" data-photo="assets/img/photos/v2/douche-italienne-carrelage-feuilles.webp" data-legende="Douche à l'italienne : spots encastrés et carrelage décoratif" aria-label="Agrandir : douche à l'italienne">
+        <img src="assets/img/photos/v2/douche-italienne-carrelage-feuilles-min.webp" alt="Douche à l'italienne avec spots encastrés et carrelage à motifs" loading="lazy" decoding="async">
       </button>
     </div>
 
@@ -512,11 +585,32 @@
     </div>
 
     <div class="centre" style="margin-top:36px">
-      <a href="https://www.google.com/search?q=NOGRETTE+ELEC+Avis" rel="noopener nofollow"
-         target="_blank" class="btn btn--contour">Lire les avis sur Google</a>
+      <div class="btn__groupe" style="justify-content:center;margin-top:0">
+        <a href="https://www.google.com/search?q=NOGRETTE+ELEC+Avis" rel="noopener nofollow"
+           target="_blank" class="btn btn--contour">Lire les avis sur Google</a>
+        <a href="https://www.google.com/search?q=NOGRETTE+ELEC+Nyons+avis" rel="noopener nofollow"
+           target="_blank" class="btn btn--secondaire">⭐ Laisser un avis</a>
+      </div>
+      <p style="margin-top:14px;font-size:.88rem;color:var(--texte-doux)">Vous êtes client ? Votre avis aide un autre habitant de la région à choisir sereinement.</p>
     </div>
   </div>
 </section>
+
+<!-- ====================== BANDEAU TYPO ====================== -->
+<!-- Grand texte qui défile en continu : respiration graphique
+     entre les avis et la zone d'intervention. -->
+<div class="bandeau-texte" aria-hidden="true">
+  <div class="bandeau-texte__piste">
+    <div class="bandeau-texte__groupe">
+      <span>Installation</span><span class="sep">⚡</span>
+      <span class="plein">Dépannage</span><span class="sep">⚡</span>
+      <span>Climatisation</span><span class="sep">⚡</span>
+      <span class="plein">Domotique</span><span class="sep">⚡</span>
+      <span>Rénovation</span><span class="sep">⚡</span>
+      <span class="plein">Mise aux normes</span><span class="sep">⚡</span>
+    </div>
+  </div>
+</div>
 
 <!-- ====================== ZONE ====================== -->
 <section class="section section--gris">
@@ -537,9 +631,9 @@
         <ul class="communes">
           <li>Nyons</li><li>Aubres</li><li>Venterol</li><li>Vinsobres</li>
           <li>Mirabel-aux-Baronnies</li><li>Piégon</li><li>Condorcet</li>
-          <li>Sainte-Jalle</li><li>Buis-les-Baronnies</li><li>Rémuzat</li>
-          <li>Villeperdrix</li><li>Sahune</li><li>Valréas</li><li>Grillon</li>
-          <li>Visan</li><li>Vaison-la-Romaine</li><li>Séguret</li><li>Rasteau</li>
+          <li>Sainte-Jalle</li><li><a href="electricien-buis-les-baronnies.html">Buis-les-Baronnies</a></li><li><a href="electricien-remuzat.html">Rémuzat</a></li>
+          <li>Villeperdrix</li><li>Sahune</li><li><a href="electricien-valreas.html">Valréas</a></li><li>Grillon</li>
+          <li>Visan</li><li><a href="electricien-vaison-la-romaine.html">Vaison-la-Romaine</a></li><li>Séguret</li><li>Rasteau</li>
           <li>Mollans-sur-Ouvèze</li><li>Montbrison-sur-Lez</li>
         </ul>
         <p>Votre commune n'est pas dans la liste ? Appelez, on regarde.</p>
@@ -637,7 +731,7 @@
           <li>Nyons, 26110</li>
           <li>Drôme · Vaucluse · Ardèche</li>
           <li><a href="mailto:nogrette.elec@gmail.com">nogrette.elec@gmail.com</a></li>
-          <li>Lundi au vendredi, 8 h – 18 h</li>
+          <li>Lundi au vendredi, 8 h 30 – 18 h</li>
         </ul>
       </div>
 

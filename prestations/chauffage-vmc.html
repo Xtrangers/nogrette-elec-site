@@ -20,8 +20,67 @@
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<!-- jsonld-auto:debut -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Accueil",
+   "item": "https://nogrette-elec.fr/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Prestations",
+   "item": "https://nogrette-elec.fr/prestations/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Chauffage électrique & VMC"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Radiateur à inertie ou pompe à chaleur ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La pompe à chaleur air/air consomme nettement moins et rafraîchit l'été, mais elle coûte plus cher à l'installation et suppose un groupe extérieur. Le radiateur à inertie est moins cher, invisible de l'extérieur et parfait pour les chambres ou une maison bien isolée. En pratique, la meilleure solution combine souvent les deux : une pompe à chaleur sur la pièce de vie, des radiateurs à inertie dans les chambres. Je réalise les deux , donc je n'ai aucune raison de vous pousser vers l'une plutôt que l'autre — on choisit selon votre logement et votre budget."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Ma VMC est bruyante, faut-il la changer ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Pas toujours. Un bruit de soufflerie vient souvent de bouches encrassées ou d'une gaine écrasée ou mal fixée. Un nettoyage et une reprise du réseau règlent une bonne partie des cas. Si le moteur est en fin de vie, le remplacement seul du caisson suffit généralement."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Simple flux ou double flux ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La double flux récupère la chaleur de l'air extrait et fait donc gagner sur le chauffage, mais elle exige un réseau de gaines complet — réaliste en construction neuve ou en grosse rénovation, compliqué en rénovation légère. Pour la plupart des maisons existantes, une hygroréglable bien posée offre le meilleur rapport résultat/prix."
+   }
+  }
+ ]
+}
+</script>
+<!-- jsonld-auto:fin -->
 </head>
 <body>
 
@@ -73,6 +132,7 @@
 <main id="contenu">
 
 <section class="hero hero--page">
+  <div class="hero__fond"><img src="../assets/img/photos/v2/clim-gainable-combles.webp" alt="" fetchpriority="high" decoding="async"></div>
   <div class="conteneur">
     <nav class="ariane" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span>›</span><a href="../prestations/index.html">Prestations</a><span>›</span>Chauffage électrique &amp; VMC</nav>
     <h1>Chauffage électrique &amp; VMC</h1>
@@ -134,7 +194,7 @@
     <div class="etapes">
       <div class="etape">
         <h3>On se voit sur place</h3>
-        <p>Je passe voir le chantier, on fait le tour du projet ensemble et je relève tout ce dont j'ai besoin.</p>
+        <p>Je passe voir, et on fait le point pièce par pièce : ce qui chauffe, ce qui ventile, et ce qui manque.</p>
       </div>
       <div class="etape">
         <h3>Vous recevez le devis</h3>
@@ -238,7 +298,7 @@
           <li>Nyons, 26110</li>
           <li>Drôme · Vaucluse · Ardèche</li>
           <li><a href="mailto:nogrette.elec@gmail.com">nogrette.elec@gmail.com</a></li>
-          <li>Lundi au vendredi, 8 h – 18 h</li>
+          <li>Lundi au vendredi, 8 h 30 – 18 h</li>
         </ul>
       </div>
 

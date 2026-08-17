@@ -20,8 +20,75 @@
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<!-- jsonld-auto:debut -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Accueil",
+   "item": "https://nogrette-elec.fr/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Prestations",
+   "item": "https://nogrette-elec.fr/prestations/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Dépannage & recherche de panne"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Vous intervenez en urgence, la nuit et le week-end ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Je suis artisan seul, je ne peux pas garantir une astreinte 24 h/24 — et je préfère vous le dire franchement plutôt que de l'afficher et de ne pas répondre. En journée du lundi au vendredi, j'essaie toujours de caser les urgences le jour même ou le lendemain. En dehors, appelez : si je peux, je viens."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Mon différentiel saute dès que je le remonte, que faire ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "C'est le signe d'un défaut permanent sur un circuit. Coupez tous les disjoncteurs divisionnaires, remontez le différentiel, puis remontez les disjoncteurs un par un : celui qui fait sauter à nouveau vous indique le circuit fautif. Laissez-le coupé et appelez-moi avec cette information, ça fait gagner du temps."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien coûte un dépannage ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Je facture le déplacement et le temps passé, plus les fournitures éventuelles. Je vous annonce le tarif au téléphone avant de me déplacer — vous ne découvrez rien sur la facture."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Une prise qui chauffe, c'est grave ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Une prise chaude au toucher signale un mauvais contact ou une surcharge, et c'est un départ de feu potentiel. Cessez de l'utiliser, coupez le circuit correspondant et faites-la vérifier rapidement."
+   }
+  }
+ ]
+}
+</script>
+<!-- jsonld-auto:fin -->
 </head>
 <body>
 
@@ -73,6 +140,7 @@
 <main id="contenu">
 
 <section class="hero hero--page">
+  <div class="hero__fond"><img src="../assets/img/photos/v2/gaines-electriques-sortie-mur.webp" alt="" fetchpriority="high" decoding="async"></div>
   <div class="conteneur">
     <nav class="ariane" aria-label="Fil d'Ariane"><a href="../index.html">Accueil</a><span>›</span><a href="../prestations/index.html">Prestations</a><span>›</span>Dépannage &amp; recherche de panne</nav>
     <h1>Dépannage &amp; recherche de panne</h1>
@@ -113,10 +181,14 @@
         </ul>
       </div>
       <div><div class="encart-lateral">
-  <h3>Devis gratuit</h3>
-  <p>Décrivez-moi votre besoin. Je vous rappelle dans la journée, et le devis suit sous 48 h par email.</p>
+  <h3>Une panne ? Appelez directement</h3>
+  <p>Pas de formulaire pour une panne : décrivez-moi ce qui se passe au téléphone, je vous dis tout de suite si c'est grave et quand je peux passer.</p>
   <a href="tel:+33781067379" class="btn btn--principal">07 81 06 73 79</a>
-  <a href="../contact.html" class="btn btn--contour">Formulaire de devis</a>
+  <p style="font-size:.88rem;margin:4px 0 0">📷 Une photo de votre tableau ou de la panne par
+    <a href="sms:+33781067379">SMS</a> ou
+    <a href="https://wa.me/33781067379" rel="noopener" target="_blank">WhatsApp</a>
+    m'aide à préparer l'intervention.</p>
+  <p style="font-size:.88rem;margin:8px 0 0;color:var(--texte-doux)">Réponse en journée, du lundi au vendredi, 8 h 30 – 18 h. En dehors, laissez un message : si je peux, je viens.</p>
 </div></div>
     </div>
   </div>
@@ -136,6 +208,31 @@
 
 
 <section class="section">
+  <div class="conteneur">
+    <h2 class="section__titre">Comment ça se passe</h2>
+    <p class="section__intro">Un dépannage ne suit pas le circuit du devis : ça va plus vite.</p>
+    <div class="etapes">
+      <div class="etape">
+        <h3>Vous m'appelez</h3>
+        <p>Décrivez-moi ce qui se passe : ce qui a sauté, depuis quand, ce qui a changé récemment. Une photo par SMS ou WhatsApp aide beaucoup.</p>
+      </div>
+      <div class="etape">
+        <h3>Diagnostic au téléphone</h3>
+        <p>Dans la plupart des cas, je peux vous dire si c'est grave, ce que vous pouvez vérifier vous-même sans risque, et si ça peut attendre.</p>
+      </div>
+      <div class="etape">
+        <h3>Tarif annoncé, j'interviens</h3>
+        <p>Déplacement et taux horaire annoncés avant de partir — vous ne découvrez rien sur la facture. J'essaie de caser les urgences le jour même.</p>
+      </div>
+      <div class="etape">
+        <h3>Je répare et j'explique</h3>
+        <p>Je cherche l'origine de la panne, pas seulement le symptôme. Et je vous dis franchement si des travaux plus complets s'imposent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gris">
   <div class="conteneur">
     <h2 class="section__titre">Questions fréquentes</h2>
     <div class="faq" style="margin-top:32px">
@@ -159,14 +256,14 @@
   </div>
 </section>
 
-<section class="section section--gris">
+<section class="section">
   <div class="conteneur">
     <div class="appel">
-      <h2>Un projet ? Une question ?</h2>
-      <p>Le premier échange ne coûte rien, et vous saurez tout de suite où vous allez.</p>
+      <h2>Une panne maintenant ?</h2>
+      <p>Décrivez-moi ce qui se passe : je vous dis tout de suite si c'est grave, et quand je peux passer.</p>
       <div class="btn__groupe">
         <a href="tel:+33781067379" class="btn btn--principal">📞 07 81 06 73 79</a>
-        <a href="../contact.html" class="btn btn--secondaire">Demander un devis</a>
+        <a href="https://wa.me/33781067379" rel="noopener" target="_blank" class="btn btn--secondaire">Envoyer une photo WhatsApp</a>
       </div>
     </div>
   </div>
@@ -225,7 +322,7 @@
           <li>Nyons, 26110</li>
           <li>Drôme · Vaucluse · Ardèche</li>
           <li><a href="mailto:nogrette.elec@gmail.com">nogrette.elec@gmail.com</a></li>
-          <li>Lundi au vendredi, 8 h – 18 h</li>
+          <li>Lundi au vendredi, 8 h 30 – 18 h</li>
         </ul>
       </div>
 

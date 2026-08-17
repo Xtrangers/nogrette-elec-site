@@ -20,8 +20,29 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- jsonld-auto:debut -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Accueil",
+   "item": "https://nogrette-elec.fr/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "L'entreprise"
+  }
+ ]
+}
+</script>
+<!-- jsonld-auto:fin -->
 </head>
 <body>
 
@@ -73,10 +94,11 @@
 <main id="contenu">
 
 <section class="hero hero--page">
+  <div class="hero__fond"><img src="assets/img/photos/v2/remi-nogrette-au-travail.webp" alt="" fetchpriority="high" decoding="async"></div>
   <div class="conteneur">
     <nav class="ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>›</span>L'entreprise</nav>
-    <h1>L'artisan derrière l'entreprise</h1>
-    <p class="hero__accroche">Un seul interlocuteur, du premier appel à la fin du chantier.</p>
+    <h1>Rémi Nogrette, artisan électricien à Nyons</h1>
+    <p class="hero__accroche">L'artisan derrière l'entreprise : un seul interlocuteur, du premier appel à la fin du chantier.</p>
   </div>
 </section>
 
@@ -217,9 +239,14 @@
            hôpital, usines, lotissements.</p>
       </div>
       <div class="carte">
-        <h3>Puis</h3>
-        <p>Électricité Générale Reboul-Cotte : industriel et tertiaire. Puis plusieurs
-           petits artisans.</p>
+        <h3>2010</h3>
+        <p>Électricité Générale Reboul-Cotte : électrification industrielle et tertiaire.
+           Armoires, automatismes, moteurs.</p>
+      </div>
+      <div class="carte">
+        <h3>2011</h3>
+        <p>Chez plusieurs petits artisans : maisons de village, dépannage, bâti ancien.
+           Le contact direct avec le client.</p>
       </div>
       <div class="carte">
         <h3>2018</h3>
@@ -296,7 +323,7 @@
           <li>Nyons, 26110</li>
           <li>Drôme · Vaucluse · Ardèche</li>
           <li><a href="mailto:nogrette.elec@gmail.com">nogrette.elec@gmail.com</a></li>
-          <li>Lundi au vendredi, 8 h – 18 h</li>
+          <li>Lundi au vendredi, 8 h 30 – 18 h</li>
         </ul>
       </div>
 
